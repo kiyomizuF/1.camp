@@ -15,4 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
     pauseOnHover: false,
     pauseOnDotsHover: false,
   });
+
+  $(".openbtn").click(function () {
+    $(this).toggleClass("active");
+  });
 });

@@ -28,8 +28,21 @@
           ><img src="img/logo.png" alt="ながのカントリーパーク" class="logo"
         /></a>
       </h1>
+
+      <!-- PCナビ -->
       <nav>
-        <ul class="gnavi">
+        <ul class="gnavi pc-navi">
+          <li><a href="index.html#news">ニュース</a></li>
+          <li><a href="index.html#activity">アクティビティ</a></li>
+          <li><a href="index.html#rental">レンタル</a></li>
+          <li><a href="index.html#facility">施設</a></li>
+          <li><a href="index.html#access">アクセス</a></li>
+        </ul>
+      </nav>
+      <!-- SPナビ -->
+      <div class="openbtn"><span></span><span></span></div>
+      <nav class="sp-navi">
+        <ul>
           <li><a href="index.html#news">ニュース</a></li>
           <li><a href="index.html#activity">アクティビティ</a></li>
           <li><a href="index.html#rental">レンタル</a></li>
@@ -38,9 +51,9 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <div class="main-wrap">
+    <div class="main-wrap">
+      <main>
+        <article>
           <ul class="carousel">
             <li class="carousel-item carousel-item01"></li>
             <li class="carousel-item carousel-item02"></li>
@@ -75,84 +88,129 @@
             <h2>
               <img src="img/activity.png" alt="アクティビティ" />
             </h2>
-            <img src="img/007.jpg" alt="アクティビティのイメージ図" />
-            <ul>
-              <li>アスレチック</li>
-              <li>釣り</li>
-              <li>ジップライン</li>
-            </ul>
+            <div class="imgCenter">
+              <img src="img/007.jpg" alt="アクティビティのイメージ図" />
+            </div>
+            <div class="explanation">
+              <ul>
+                <li>アスレチック</li>
+                <li>釣り</li>
+                <li>ジップライン</li>
+              </ul>
+              <p>
+                森の中でスリル満点のアスレチック、静かな水辺での釣り、そして空中を駆け抜けるジップライン。<br />自然を全身で感じるアクティビティが揃っています。ファミリーでの冒険をお楽しみください！
+              </p>
+            </div>
           </section>
           <section id="rental">
             <h2>
               <img src="img/rental.png" alt="レンタル" />
             </h2>
-            <img src="img/006.jpg" alt="レンタル品のイメージ図" />
-            <ul>
-              <li>テント（4～5人用）</li>
-              <li>ヘキサタープ（4～5人用）</li>
-              <li>サンシェード（4～5人用）</li>
-              <li>チェア</li>
-              <li>テーブル</li>
-              <li>シュラフ(寝袋)</li>
-              <li>シュラフマット</li>
-              <li>焚火台(BBQ台)</li>
-            </ul>
+            <div class="imgCenter">
+              <img src="img/006.jpg" alt="レンタル品のイメージ図" />
+            </div>
+            <div class="explanation">
+              <ul>
+                <li>テント（4～5人用）</li>
+                <li>ヘキサタープ（4～5人用）</li>
+                <li>サンシェード（4～5人用）</li>
+                <li>チェア</li>
+                <li>テーブル</li>
+                <li>シュラフ(寝袋)</li>
+                <li>シュラフマット</li>
+                <li>焚火台(BBQ台)</li>
+              </ul>
+              <p>
+                キャンプ初心者も安心！手ぶらで来ても楽しめる充実のレンタルサービス。<br />テントやシュラフ、焚火台まで、必要な道具はすべて揃っています。快適なアウトドア体験をお約束します！
+              </p>
+            </div>
           </section>
           <section id="facility">
             <h2>
               <img src="img/facility.png" alt="施設" />
             </h2>
-            <img src="img/011.jpg" alt="施設のイメージ図" />
-            <ul>
-              <li>シャワールーム（中央管理棟内）</li>
-              <li>授乳室（中央管理棟内）</li>
-              <li>室内トイレ（中央管理棟内）</li>
-              <li>洗い場</li>
-            </ul>
+            <div class="imgCenter">
+              <img src="img/011.jpg" alt="施設のイメージ図" />
+            </div>
+            <div class="explanation">
+              <ul>
+                <li>シャワールーム（中央管理棟内）</li>
+                <li>授乳室（中央管理棟内）</li>
+                <li>室内トイレ（中央管理棟内）</li>
+                <li>洗い場</li>
+              </ul>
+              <p>
+                清潔で快適な設備が充実。シャワールームや室内トイレ、授乳室まで、ファミリーでも安心して過ごせる環境が整っています。
+              </p>
+            </div>
           </section>
           <section id="price">
             <h2>
               <img src="img/price.png" alt="料金表" />
             </h2>
-            <div>
-              <table>
-                <tr>
-                  <th>駐車場：50台</th>
-                  <td>800円</td>
-                </tr>
-                <tr>
-                  <th>小サイト（約5㎡）</th>
-                  <td>2000円</td>
-                </tr>
-                <tr>
-                  <th>大サイト（約10㎡）</th>
-                  <td>3500円</td>
-                </tr>
-              </table>
+            <table>
+              <tr>
+                <th>駐車場<br class="br-sp" />（上限50台）</th>
+                <td>800円</td>
+              </tr>
+              <tr>
+                <th>小サイト<br class="br-sp" />（約5㎡）</th>
+                <td>2000円</td>
+              </tr>
+              <tr>
+                <th>大サイト<br class="br-sp" />（約10㎡）</th>
+                <td>3500円</td>
+              </tr>
+            </table>
+            <div class="price-table">
+              <p class="anotation">
+                各区画に電源がありますが、使用する場合は別途300円が掛かります。
+              </p>
               <p>
-                ※各区画に電源がありますが、使用する場合は別途300円が掛かります。
+                チェックイン　<br
+                  class="br-sp"
+                />13時～17時<br />チェックアウト　<br class="br-sp" />6時～11時
               </p>
             </div>
-            <p>
-              チェックイン時間　13時～17時<br />チェックアウト時間　6時～11時
-            </p>
           </section>
           <section id="access">
             <h2>
               <img src="img/access.png" alt="アクセス" />
             </h2>
-            <div>
-              <p>〒393-0046<br />長野県諏訪郡下諏訪町東赤砂１０９４４</p>
-              <p>お問い合わせ<br />0000-000-000<br />abc@gmail.com</p>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12899.622977826579!2d138.06980437367167!3d36.07140301568751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSMzkzLTAwNDYg6ZW36YeO55yM6KuP6Kiq6YOh5LiL6KuP6Kiq55S65p2x6LWk56CC77yR77yQ77yZ77yU77yU!5e0!3m2!1sja!2sjp!4v1723534719260!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div>
+                <p>〒393-0046<br />長野県諏訪郡下諏訪町東赤砂１０９４４</p>
+                <p>お問い合わせ<br />0000-000-000<br />abc@gmail.com</p>
+              </div>
             </div>
           </section>
+        </article>
+      </main>
+      <footer>
+        <div class="flex-wrap">
+          <div>
+            <img src="img/logo.png" alt="ながのカントリーパーク" />
+          </div>
+          <ul>
+            <li><a href="index.html#news">ニュース</a></li>
+            <li><a href="index.html#activity">アクティビティ</a></li>
+            <li><a href="index.html#rental">レンタル</a></li>
+            <li><a href="index.html#facility">施設</a></li>
+            <li><a href="index.html#access">アクセス</a></li>
+          </ul>
         </div>
-      </article>
-    </main>
-    <footer>
-      <img src="img/logo.png" alt="ながのカントリーパーク" />
-    </footer>
-
+        <p>&copy;ながのカントリーパーク</p>
+      </footer>
+    </div>
     <script src="js/script.js"></script>
 
     <!-- jQuery読み込み -->
