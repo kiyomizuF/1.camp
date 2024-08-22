@@ -39,7 +39,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #fff350;
+  background-color: #d9b99a;
   z-index: 3;
   display: none;
 }
@@ -180,8 +180,8 @@ header {
 ページ全体の設定
 ============= */
 .main-wrap {
-  background-color: #fffddb;
-  background-image: radial-gradient(#ebf0ce 10%, transparent 10%);
+  background-color: #d9b99a;
+  background-image: radial-gradient(#bb9a7b, transparent 10%);
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px;
   background-repeat: repeat;
@@ -210,7 +210,7 @@ ul {
 ============= */
 #news {
   margin-top: 100px;
-  background-color: #bed5b1;
+  background-color: #bb9a7b;
   border-radius: 50px;
   padding: 50px 0;
 }
@@ -248,7 +248,7 @@ time {
   background-color: #fafafa;
   border-radius: 10px 10px 100px 100px;
   padding: 50px 0;
-  box-shadow: 10px 5px #bed5b1;
+  box-shadow: 10px 5px #bb9a7b;
 }
 
 .imgCenter {
@@ -268,7 +268,7 @@ time {
 
 .explanation ul li::before {
   content: "●";
-  color: #fff350;
+  color: #d9b99a;
   -webkit-text-stroke: 1px #000;
 }
 
@@ -285,7 +285,7 @@ time {
   background-color: #fafafa;
   border-radius: 10px 10px 100px 100px;
   padding: 50px 0;
-  box-shadow: 10px 5px #bed5b1;
+  box-shadow: 10px 5px #bb9a7b;
 }
 
 .explanation {
@@ -296,7 +296,7 @@ time {
 
 #activity ul li::before {
   content: "●";
-  color: #fff350;
+  color: #d9b99a;
   -webkit-text-stroke: 1px #000;
 }
 
@@ -313,7 +313,7 @@ time {
   background-color: #fafafa;
   border-radius: 10px 10px 100px 100px;
   padding: 50px 0;
-  box-shadow: 10px 5px #bed5b1;
+  box-shadow: 10px 5px #bb9a7b;
 }
 
 .explanation {
@@ -324,7 +324,7 @@ time {
 
 #activity ul li::before {
   content: "●";
-  color: #fff350;
+  color: #d9b99a;
   -webkit-text-stroke: 1px #000;
 }
 
@@ -338,7 +338,7 @@ time {
 ============= */
 #price {
   margin-top: 100px;
-  background-color: #bed5b1;
+  background-color: #bb9a7b;
   border-radius: 50px;
   padding: 50px 0;
 }
@@ -353,13 +353,13 @@ table {
 }
 
 th {
-  background-color: #fff350;
+  background-color: #d9b99a;
   border-bottom: 1px solid #fafafa;
   padding: 10px;
 }
 
 td {
-  border-bottom: 2px solid #fff350;
+  border-bottom: 2px solid #d9b99a;
   padding: 10px;
 }
 
@@ -392,7 +392,7 @@ td {
 #access {
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: #bed5b1;
+  background-color: #bb9a7b;
   border-radius: 50px;
   padding: 50px 0;
 }
@@ -502,16 +502,22 @@ footer p {
   .pc-navi {
     display: none;
   }
+
+  .on {
+    display: block;
+  }
   /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
   .openbtn {
     /*ボタン内側の基点となるためrelativeを指定。
 追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
-    position: relative;
+    position: absolute;
     top: 10px;
-    left: 20px;
+    right: 10px;
     width: 50px;
     height: 50px;
     cursor: pointer;
+    background-color: #d9b99a;
+    border-radius: 20px;
     z-index: 4;
   }
 
@@ -522,13 +528,13 @@ footer p {
     transition: all 0.4s; /*アニメーションの設定*/
     position: absolute;
     left: 13px;
-    height: 2px;
+    height: 4px;
     background: #fff;
     z-index: 3;
   }
 
   .openbtn span:nth-of-type(1) {
-    top: 22px;
+    top: 20px;
     width: 50%;
   }
 
@@ -540,14 +546,14 @@ footer p {
   /*activeクラスが付与されると線が回転して×に*/
 
   .openbtn.active span:nth-of-type(1) {
-    top: 20px;
+    top: 17px;
     left: 16px;
     transform: translateY(6px) rotate(-45deg);
     width: 35%;
   }
 
   .openbtn.active span:nth-of-type(2) {
-    top: 32px;
+    top: 29px;
     left: 16px;
     transform: translateY(-6px) rotate(45deg);
     width: 35%;

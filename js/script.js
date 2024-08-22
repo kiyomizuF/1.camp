@@ -18,5 +18,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
   $(".openbtn").click(function () {
     $(this).toggleClass("active");
+    $(".sp-navi").toggleClass("on");
   });
 });
